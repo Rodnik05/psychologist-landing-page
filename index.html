@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Виктория Родецкая - Психолог-консультант</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+:root {
+  /* Primitive Color Tokens */
+  --color-white: rgba(255, 255, 255, 1);
+  --color-black: rgba(0, 0, 0, 1);
+  --color-cream-50: rgba(252, 252, 249, 1);
+  --color-cream-100: rgba(255, 255, 253, 1);
+  --color-gray-200: rgba(245, 245, 245, 1);
+  --color-gray-300: rgba(167, 169, 169, 1);
+  --color-gray-400: rgba(119, 124, 124, 1);
+  --color-slate-500: rgba(98, 108, 113, 1);
+  --color-brown-600: rgba(94, 82, 64, 1);
+  --color-charcoal-700: rgba(31, 33, 33, 1);
+  --color-charcoal-800: rgba(38, 40, 40, 1);
+  --color-slate-900: rgba(19, 52, 59, 1);
+  --color-teal-300: rgba(50, 184, 198, 1);
+  --color-teal-400: rgba(45, 166, 178, 1);
+  --color-teal-500: rgba(33, 128, 141, 1);
+  --color-teal-600: rgba(29, 116, 128, 1);
+  --color-teal-700: rgba(26, 104, 115, 1);
+  --color-teal-800: rgba(41, 150, 161, 1);
+  --color-red-400: rgba(255, 84, 89, 1);
+  --color-red-500: rgba(192, 21, 47, 1);
+  --color-orange-400: rgba(230, 129, 97, 1);
+  --color-orange-500: rgba(168, 75, 47, 1);
+
+  /* Custom colors for this site */
+  --color-blue-soft: rgba(230, 240, 250, 1);
+  --color-blue-main: rgba(156, 193, 223, 1);
+  --color-blue-accent: rgba(106, 156, 197, 1);
+  --color-coral-soft: rgba(255, 230, 220, 1);
+  --color-green-soft: rgba(230, 245, 235, 1);
+  --color-purple-soft: rgba(240, 230, 250, 1);
+  --color-yellow-soft: rgba(255, 250, 230, 1);
+  
+  /* RGB versions for opacity control */
+  --color-brown-600-rgb: 94, 82, 64;
+  --color-teal-500-rgb: 33, 128, 141;
+  --color-slate-900-rgb: 19, 52, 59;
+  --color-slate-500-rgb: 98, 108, 113;
+  --color-red-500-rgb: 192, 21, 47;
+  --color-red-400-rgb: 255, 84, 89;
+  --color-orange-500-rgb: 168, 75, 47;
+  --color-orange-400-rgb: 230, 129, 97;
+
+  /* Background color tokens (Light Mode) */
+  --color-bg-1: rgba(59, 130, 246, 0.08);
+  --color-bg-2: rgba(245, 158, 11, 0.08);
+  --color-bg-3: rgba(34, 197, 94, 0.08);
+  --color-bg-4: rgba(239, 68, 68, 0.08);
+  --color-bg-5: rgba(147, 51, 234, 0.08);
+  --color-bg-6: rgba(249, 115, 22, 0.08);
+  --color-bg-7: rgba(236, 72, 153, 0.08);
+  --color-bg-8: rgba(6, 182, 212, 0.08);
+
+  /* Semantic Color Tokens (Light Mode) */
+  --color-background: var(--color-blue-soft);
+  --color-surface: var(--color-white);
+  --color-text: var(--color-slate-900);
+  --color-text-secondary: var(--color-slate-500);
+  --color-primary: var(--color-blue-accent);
+  --color-primary-hover: rgba(106, 156, 197, 0.85);
+  --color-primary-active: rgba(106, 156, 197, 0.7);
+  --color-secondary: rgba(var(--color-brown-600-rgb), 0.12);
+  --color-secondary-hover: rgba(var(--color-brown-600-rgb), 0.2);
+  --color-secondary-active: rgba(var(--color-brown-600-rgb), 0.25);
+  --color-border: rgba(var(--color-brown-600-rgb), 0.2);
+  --color-btn-primary-text: var(--color-white);
+  --color-card-border: rgba(var(--color-brown-600-rgb), 0.12);
+  --color-card-border-inner: rgba(var(--color-brown-600-rgb), 0.12);
+  --color-error: var(--color-red-500);
+  --color-success: var(--color-teal-500);
+  --color-warning: var(--color-orange-500);
+  --color-info: var(--color-slate-500);
+  --color-focus-ring: rgba(var(--color-teal-500-rgb), 0.4);
+  --color-select-caret: rgba(var(--color-slate-900-rgb), 0.8);
+
+  /* Common style patterns */
+  --focus-ring: 0 0 0 3px var(--color-focus-ring);
+  --focus-outline: 2px solid var(--color-primary);
+  --status-bg-opacity: 0.15;
+  --status-border-opacity: 0.25;
+
+  /* Typography */
+  --font-family-base: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-family-display: "Playfair Display", Georgia, serif;
+  --font-size-xs: 11px;
+  --font-size-sm: 12px;
+  --font-size-base: 14px;
+  --font-size-md: 16px;
+  --font-size-lg: 18px;
+  --font-size-xl: 20px;
+  --font-size-2xl: 24px;
+  --font-size-3xl: 32px;
+  --font-size-4xl: 48px;
+  --font-size-5xl: 56px;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 550;
+  --font-weight-bold: 600;
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.7;
+  --letter-spacing-tight: -0.01em;
+
+  /* Spacing */
+  --space-0: 0;
+  --space-1: 1px;
+  --space-2: 2px;
+  --space-4: 4px;
+  --space-6: 6px;
+  --space-8: 8px;
+  --space-10: 10px;
+  --space-12: 12px;
+  --space-16: 16px;
+  --space-20: 20px;
+  --space-24: 24px;
+  --space-32: 32px;
+  --space-40: 40px;
+  --space-48: 48px;
+  --space-64: 64px;
+  --space-80: 80px;
+
+  /* Border Radius */
+  --radius-sm: 6px;
+  --radius-base: 8px;
+  --radius-md: 10px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.02);
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.02);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.04), 0 2px 4px -1px rgba(0, 0, 0, 0.02);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.04), 0 4px 6px -2px rgba(0, 0, 0, 0.02);
+
+  /* Animation */
+  --duration-fast: 150ms;
+  --duration-normal: 250ms;
+  --duration-slow: 350ms;
+  --ease-standard: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-family-base);
+  background: var(--color-background);
+  color: var(--color-text);
+  line-height: var(--line-height-normal);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* Navigation */
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  box-shadow: var(--shadow-sm);
+  transition: all var(--duration-normal) var(--ease-standard);
+}
+
+.nav__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--space-16) var(--space-24);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo {
+  font-family: var(--font-family-display);
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.nav__menu {
+  display: flex;
+  gap: var(--space-32);
+  list-style: none;
+}
+
+.nav__link {
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-medium);
+  transition: color var(--duration-fast) var(--ease-standard);
+}
+
+.nav__link:hover {
+  color: var(--color-primary);
+}
+
+.nav__toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: var(--space-8);
+}
+
+.nav__toggle span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--color-text);
+  margin: 5px 0;
+  transition: all var(--duration-normal) var(--ease-standard);
+}
+
+/* Hero Section */
+.hero {
+  padding: 120px var(--space-24) var(--space-80);
+  background: linear-gradient(135deg, var(--color-blue-soft) 0%, var(--color-purple-soft) 100%);
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero__container {
+  max-width: 1200px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-64);
+  align-items: center;
+}
+
+.hero__content {
+  padding: var(--space-32);
+}
+
+.hero__name {
+  font-family: var(--font-family-display);
+  font-size: var(--font-size-5xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text);
+  margin-bottom: var(--space-16);
+  line-height: var(--line-height-tight);
+}
+
+.hero__title {
+  font-size: var(--font-size-2xl);
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-24);
+  font-weight: var(--font-weight-normal);
+}
+
+.hero__subtitle {
+  font-size: var(--font-size-lg);
+  color: var(--color-text-secondary);
+  line-height: var(--line-height-relaxed);
+  margin-bottom: var(--space-32);
+}
+
+.hero__cta {
+  display: inline-block;
+  padding: var(--space-16) var(--space-40);
+  background: var(--color-primary);
+  color: var(--color-white);
+  text-decoration: none;
+  border-radius: var(--radius-lg);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-md);
+  transition: all var(--duration-normal) var(--ease-standard);
+  box-shadow: var(--shadow-md);
+}
+
+.hero__cta:hover {
+  background: var(--color-primary-hover);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.hero__image {
+  width: 100%;
+  height: 500px;
+  background: var(--color-surface);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-base);
+  text-align: center;
+  padding: var(--space-32);
+  border: 2px dashed var(--color-border);
+}
+
+/* Section Base Styles */
+.section {
+  padding: var(--space-80) var(--space-24);
+}
+
+.section__container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.section__title {
+  font-family: var(--font-family-display);
+  font-size: var(--font-size-4xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text);
+  margin-bottom: var(--space-48);
+  text-align: center;
+}
+
+.section__content {
+  font-size: var(--font-size-lg);
+  line-height: var(--line-height-relaxed);
+  color: var(--color-text-secondary);
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  white-space: pre-line;
+}
+
+/* About Section */
+.about {
+  background: var(--color-surface);
+}
+
+/* Services Section */
+.services__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-24);
+  margin-top: var(--space-48);
+}
+
+.service-card {
+  background: var(--color-surface);
+  padding: var(--space-32);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  transition: all var(--duration-normal) var(--ease-standard);
+  border: 1px solid var(--color-card-border);
+}
+
+.service-card:nth-child(1) { background: var(--color-bg-1); }
+.service-card:nth-child(2) { background: var(--color-bg-3); }
+.service-card:nth-child(3) { background: var(--color-bg-5); }
+.service-card:nth-child(4) { background: var(--color-bg-7); }
+.service-card:nth-child(5) { background: var(--color-bg-2); }
+
+.service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.service-card__text {
+  font-size: var(--font-size-md);
+  color: var(--color-text);
+  font-weight: var(--font-weight-medium);
+  text-align: center;
+}
+
+/* Education Section */
+.education {
+  background: var(--color-surface);
+}
+
+.education__main {
+  background: var(--color-bg-1);
+  padding: var(--space-40);
+  border-radius: var(--radius-xl);
+  margin-bottom: var(--space-32);
+  box-shadow: var(--shadow-sm);
+}
+
+.education__main-title {
+  font-family: var(--font-family-display);
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text);
+  margin-bottom: var(--space-16);
+}
+
+.education__main-item {
+  font-size: var(--font-size-lg);
+  color: var(--color-text-secondary);
+  line-height: var(--line-height-relaxed);
+}
+
+.education__additional {
+  margin-top: var(--space-32);
+}
+
+.education__toggle {
+  width: 100%;
+  padding: var(--space-24);
+  background: var(--color-bg-3);
+  border: 1px solid var(--color-card-border);
+  border-radius: var(--radius-lg);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text);
+  transition: all var(--duration-normal) var(--ease-standard);
+}
+
+.education__toggle:hover {
+  background: var(--color-bg-5);
+}
+
+.education__arrow {
+  width: 24px;
+  height: 24px;
+  transition: transform var(--duration-normal) var(--ease-standard);
+}
+
+.education__arrow.open {
+  transform: rotate(180deg);
+}
+
+.education__list {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height var(--duration-slow) var(--ease-standard);
+}
+
+.education__list.open {
+  max-height: 1000px;
+}
+
+.education__items {
+  padding: var(--space-24);
+  background: var(--color-surface);
+  border: 1px solid var(--color-card-border);
+  border-top: none;
+  border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+}
+
+.education__item {
+  padding: var(--space-16);
+  margin-bottom: var(--space-12);
+  background: var(--color-bg-8);
+  border-radius: var(--radius-base);
+  font-size: var(--font-size-md);
+  color: var(--color-text-secondary);
+  line-height: var(--line-height-relaxed);
+}
+
+.education__item:last-child {
+  margin-bottom: 0;
+}
+
+/* Pricing Section */
+.pricing__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-32);
+  margin-top: var(--space-48);
+}
+
+.pricing-card {
+  background: var(--color-surface);
+  padding: var(--space-40);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--color-card-border);
+}
+
+.pricing-card:nth-child(1) { background: var(--color-coral-soft); }
+.pricing-card:nth-child(2) { background: var(--color-green-soft); }
+
+.pricing-card__title {
+  font-family: var(--font-family-display);
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text);
+  margin-bottom: var(--space-24);
+}
+
+.pricing-card__item {
+  padding: var(--space-12) 0;
+  font-size: var(--font-size-md);
+  color: var(--color-text-secondary);
+  border-bottom: 1px solid var(--color-card-border);
+}
+
+.pricing-card__item:last-of-type {
+  border-bottom: none;
+}
+
+.pricing__note {
+  text-align: center;
+  margin-top: var(--space-32);
+  padding: var(--space-20);
+  background: var(--color-yellow-soft);
+  border-radius: var(--radius-lg);
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text);
+}
+
+/* FAQ Section */
+.faq {
+  background: var(--color-surface);
+}
+
+.faq__list {
+  margin-top: var(--space-48);
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.faq__item {
+  margin-bottom: var(--space-16);
+  border: 1px solid var(--color-card-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: var(--color-surface);
+}
+
+.faq__question {
+  width: 100%;
+  padding: var(--space-20) var(--space-24);
+  background: var(--color-surface);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text);
+  text-align: left;
+  transition: background var(--duration-fast) var(--ease-standard);
+}
+
+.faq__question:hover {
+  background: var(--color-bg-1);
+}
+
+.faq__icon {
+  width: 20px;
+  height: 20px;
+  transition: transform var(--duration-normal) var(--ease-standard);
+  flex-shrink: 0;
+  margin-left: var(--space-16);
+}
+
+.faq__icon.open {
+  transform: rotate(180deg);
+}
+
+.faq__answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height var(--duration-slow) var(--ease-standard);
+}
+
+.faq__answer.open {
+  max-height: 500px;
+}
+
+.faq__answer-content {
+  padding: var(--space-20) var(--space-24);
+  font-size: var(--font-size-md);
+  color: var(--color-text-secondary);
+  line-height: var(--line-height-relaxed);
+  background: var(--color-bg-1);
+}
+
+/* Contact Section */
+.contact {
+  background: linear-gradient(135deg, var(--color-blue-soft) 0%, var(--color-green-soft) 100%);
+  text-align: center;
+}
+
+.contact__content {
+  max-width: 600px;
+  margin: 0 auto var(--space-48);
+}
+
+.contact__methods {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-20);
+  justify-content: center;
+  margin-top: var(--space-40);
+}
+
+.contact__method {
+  padding: var(--space-16) var(--space-32);
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  text-decoration: none;
+  color: var(--color-text);
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-medium);
+  transition: all var(--duration-normal) var(--ease-standard);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--color-card-border);
+}
+
+.contact__method:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+
+/* Footer */
+.footer {
+  padding: var(--space-40) var(--space-24);
+  background: var(--color-surface);
+  text-align: center;
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-sm);
+  border-top: 1px solid var(--color-card-border);
+}
+
+.footer__content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .nav__menu {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background: var(--color-surface);
+    flex-direction: column;
+    padding: var(--space-24);
+    gap: var(--space-16);
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: all var(--duration-normal) var(--ease-standard);
+    pointer-events: none;
+  }
+
+  .nav__menu.active {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .nav__toggle {
+    display: block;
+  }
+
+  .nav__toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .nav__toggle.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .nav__toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+  }
+
+  .hero__container {
+    grid-template-columns: 1fr;
+    gap: var(--space-32);
+  }
+
+  .hero__name {
+    font-size: var(--font-size-4xl);
+  }
+
+  .hero__image {
+    height: 350px;
+  }
+
+  .section__title {
+    font-size: var(--font-size-3xl);
+  }
+
+  .section__content {
+    font-size: var(--font-size-md);
+  }
+
+  .services__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pricing__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact__methods {
+    flex-direction: column;
+  }
+
+  .section {
+    padding: var(--space-48) var(--space-16);
+  }
+}
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav__container">
+            <a href="#" class="nav__logo">ВР</a>
+            <button class="nav__toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav__menu" id="navMenu">
+                <li><a href="#about" class="nav__link">Обо мне</a></li>
+                <li><a href="#services" class="nav__link">Как я работаю</a></li>
+                <li><a href="#education" class="nav__link">Образование</a></li>
+                <li><a href="#pricing" class="nav__link">Стоимость</a></li>
+                <li><a href="#faq" class="nav__link">Вопросы</a></li>
+                <li><a href="#contact" class="nav__link">Контакты</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero__container">
+            <div class="hero__content">
+                <h1 class="hero__name">Виктория Родецкая</h1>
+                <p class="hero__title">Психолог-консультант</p>
+                <p class="hero__subtitle">Помогаю людям преодолевать трудности и менять жизнь к лучшему</p>
+                <a href="#contact" class="hero__cta">Записаться на консультацию</a>
+            </div>
+            <div class="hero__image">
+                <!-- МЕСТО ДЛЯ ФОТО: Вставьте здесь изображение Виктории -->
+                <!-- Замените содержимое этого div на: <img src="путь-к-фото.jpg" alt="Виктория Родецкая" style="width: 100%; height: 100%; object-fit: cover; border-radius: var(--radius-xl);"> -->
+                Место для фотографии<br>Виктории Родецкой
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="section__container">
+            <h2 class="section__title">Обо мне</h2>
+            <div class="section__content">
+Психолог-консультант, аккредитованный клинический психолог.
+Член Ассоциации когнитивно-поведенческой психотерапии.
+Работаю в подходах: Терапия принятия и ответственности (ACT) и Когнитивно-поведенческая терапия (КБТ).
+Применяю научно обоснованные современные методы психотерапии.
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section" id="services">
+        <div class="section__container">
+            <h2 class="section__title">Как я работаю</h2>
+            <div class="services__grid">
+                <div class="service-card">
+                    <p class="service-card__text">Когнитивно-поведенческая терапия (КБТ)</p>
+                </div>
+                <div class="service-card">
+                    <p class="service-card__text">Терапия принятия и ответственности (ACT)</p>
+                </div>
+                <div class="service-card">
+                    <p class="service-card__text">Краткосрочное психологическое консультирование</p>
+                </div>
+                <div class="service-card">
+                    <p class="service-card__text">Консультации онлайн и очно</p>
+                </div>
+                <div class="service-card">
+                    <p class="service-card__text">Ориентация на решение</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section education" id="education">
+        <div class="section__container">
+            <h2 class="section__title">Моё образование</h2>
+            
+            <!-- Main Education -->
+            <div class="education__main">
+                <h3 class="education__main-title">Основное образование</h3>
+                <p class="education__main-item">Бакалавр психологии с отличием, СПБГУ, 2014</p>
+            </div>
+
+            <!-- Additional Education -->
+            <div class="education__additional">
+                <button class="education__toggle" id="educationToggle">
+                    <span>Дополнительное обучение</span>
+                    <svg class="education__arrow" id="educationArrow" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </button>
+                <div class="education__list" id="educationList">
+                    <div class="education__items">
+                        <div class="education__item">Клиническая психология, НМИЦ им. В.М. Бехтерева, 2025</div>
+                        <div class="education__item">Терапия принятия и ответственности (ACT), IRDCT, 2024</div>
+                        <div class="education__item">Когнитивно-поведенческая терапия, CBT Institute, 2025</div>
+                        <div class="education__item">Системная семейная психотерапия, NIODO, 2020</div>
+                        <div class="education__item">Техники когнитивно-поведенческой терапии, SGPU, 2022</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="section" id="pricing">
+        <div class="section__container">
+            <h2 class="section__title">Стоимость консультаций</h2>
+            <div class="pricing__grid">
+                <div class="pricing-card">
+                    <h3 class="pricing-card__title">Очные консультации</h3>
+                    <div class="pricing-card__item">Первая консультация: 4500₽ (60-90 минут)</div>
+                    <div class="pricing-card__item">Повторные: 3500₽ (60 минут)</div>
+                </div>
+                <div class="pricing-card">
+                    <h3 class="pricing-card__title">Онлайн-консультации</h3>
+                    <div class="pricing-card__item">Первая консультация: 3500₽ (60-90 минут)</div>
+                    <div class="pricing-card__item">Повторные: 3000₽ (60 минут)</div>
+                </div>
+            </div>
+            <div class="pricing__note">Запись в начале месяца - скидка 50%</div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section faq" id="faq">
+        <div class="section__container">
+            <h2 class="section__title">Часто задаваемые вопросы</h2>
+            <div class="faq__list">
+                <div class="faq__item">
+                    <button class="faq__question" data-faq="0">
+                        <span>Как проходит первая консультация?</span>
+                        <svg class="faq__icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="faq__answer">
+                        <div class="faq__answer-content">На первой встрече мы знакомимся и обсуждаем ваш запрос. Сессия длится 50 минут. Мы говорим о том, как вы видите ситуацию, и определяем возможные пути работы.</div>
+                    </div>
+                </div>
+                <div class="faq__item">
+                    <button class="faq__question" data-faq="1">
+                        <span>Как часто нужно посещать консультации?</span>
+                        <svg class="faq__icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="faq__answer">
+                        <div class="faq__answer-content">На начальных этапах я рекомендую встречаться один раз в неделю. Со временем, после снятия острого состояния, частоту можно сократить до одного раза в 10-14 дней.</div>
+                    </div>
+                </div>
+                <div class="faq__item">
+                    <button class="faq__question" data-faq="2">
+                        <span>Могу ли я прийти с несколькими запросами?</span>
+                        <svg class="faq__icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="faq__answer">
+                        <div class="faq__answer-content">Да, вы можете прийти с несколькими запросами. Мы начнём с расстановки приоритетов и определения, что требует первоочередного внимания.</div>
+                    </div>
+                </div>
+                <div class="faq__item">
+                    <button class="faq__question" data-faq="3">
+                        <span>Что такое ACT?</span>
+                        <svg class="faq__icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="faq__answer">
+                        <div class="faq__answer-content">Терапия принятия и ответственности (ACT) - это научно обоснованный метод психотерапии, который помогает развивать гибкость в мышлении и принятии себя.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="section__container">
+            <h2 class="section__title">Записаться на консультацию</h2>
+            <div class="contact__content">
+                <p class="section__content">Свяжитесь со мной удобным для вас способом, и мы обсудим возможность работы вместе.</p>
+            </div>
+            <div class="contact__methods">
+                <!-- ВАЖНО: Замените ссылки и контакты на реальные -->
+                <a href="mailto:example@example.com" class="contact__method">Email: example@example.com</a>
+                <a href="https://t.me/example" target="_blank" class="contact__method">Telegram</a>
+                <a href="tel:+79000000000" class="contact__method">Телефон: +7-900-000-00-00</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__content">
+            <p>&copy; 2025 Виктория Родецкая. Все права защищены.</p>
+            <p style="margin-top: var(--space-8);">Санкт-Петербург</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Navigation Toggle
+        const navToggle = document.getElementById('navToggle');
+        const navMenu = document.getElementById('navMenu');
+        const navLinks = document.querySelectorAll('.nav__link');
+
+        navToggle.addEventListener('click', () => {
+            navToggle.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Close menu when clicking on a link
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navToggle.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+
+        // Education Toggle
+        const educationToggle = document.getElementById('educationToggle');
+        const educationList = document.getElementById('educationList');
+        const educationArrow = document.getElementById('educationArrow');
+
+        educationToggle.addEventListener('click', () => {
+            educationList.classList.toggle('open');
+            educationArrow.classList.toggle('open');
+        });
+
+        // FAQ Accordion
+        const faqQuestions = document.querySelectorAll('.faq__question');
+
+        faqQuestions.forEach((question) => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const icon = question.querySelector('.faq__icon');
+                
+                // Close all other answers
+                faqQuestions.forEach((otherQuestion) => {
+                    if (otherQuestion !== question) {
+                        const otherAnswer = otherQuestion.nextElementSibling;
+                        const otherIcon = otherQuestion.querySelector('.faq__icon');
+                        otherAnswer.classList.remove('open');
+                        otherIcon.classList.remove('open');
+                    }
+                });
+                
+                // Toggle current answer
+                answer.classList.toggle('open');
+                icon.classList.toggle('open');
+            });
+        });
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const offset = 80; // Height of fixed nav
+                    const targetPosition = target.offsetTop - offset;
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
